@@ -18,7 +18,7 @@ DHT dht(DHTPIN, DHTTYPE);
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600);
-  Serial.println("DHT Test Successful!");
+  Serial.println("DHT Test Successful!"); // addiding githud comment
   Blynk.begin(auth,ssid,pass);
   Serial.println("Blynk connected sucessfully");
   dht.begin();
@@ -34,7 +34,7 @@ void loop() {
     Serial.println("Something is not working as intended.");
     return; 
   }
-  Serial.println("Humidity: ");
+  Serial.println("Humidity: "); 
   Serial.print(h);
   Serial.print("%");
   Serial.println("Temperature");
